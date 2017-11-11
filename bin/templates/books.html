@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>A Genre</title>
+</head>
+
+<body>
+	<header>
+		<h1>A Genre</h1>
+	</header>
+
+	<div>
+
+	<ul>
+		<li th:each="book: ${books}">
+		
+		<a th:href="@{/book(id=${book.id})}" th:text="${book.title}"></a>
+		</li>
+		</ul>
+		
+		<a href="http://localhost:8080/genres">Back to home</a>
+	
+	
+	</div>
+
+</body>
+</html>

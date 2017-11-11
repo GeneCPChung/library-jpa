@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>A Book</title>
+</head>
+
+<body>
+
+	<header>
+		<h1> A Book </h1>
+	</header>
+
+<p th:text="${book.toString}"></p>
+<!-- <ul>
+<li><p th:text="${book.authors}"></p></li>
+</ul>
+	 -->	
+<a href="http://localhost:8080/genres">Back to home</a>
+</body>
+</html>
